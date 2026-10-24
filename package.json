@@ -1,0 +1,35 @@
+{
+  "name": "playwright-demo",
+  "version": "1.0.0",
+  "description": "Demo de Automatizacion Web E2E con Playwright, TypeScript, POM, Fixtures y Capacidades de IA - UTEC CS5383 (Cross-platform: Windows & Linux)",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:happy": "playwright test tests/e2e-happy-path.spec.ts --headed",
+    "test:happy:headless": "playwright test tests/e2e-happy-path.spec.ts",
+    "test:ai": "playwright test tests/ai-capability-demo.spec.ts --headed",
+    "test:ai:headless": "playwright test tests/ai-capability-demo.spec.ts",
+    "test:report": "playwright show-report",
+    "codegen": "playwright codegen https://www.saucedemo.com",
+    "install:browsers": "playwright install chromium",
+    "install:linux-deps": "playwright install-deps chromium"
+  },
+  "keywords": [
+    "playwright",
+    "typescript",
+    "pom",
+    "e2e",
+    "testing",
+    "ai",
+    "linux",
+    "cross-platform"
+  ],
+  "author": "Cesar y Yoselyn (Grupo 1) - UTEC",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.50.0",
+    "@types/node": "^22.13.0",
+    "typescript": "^5.7.0"
+  }
+}
